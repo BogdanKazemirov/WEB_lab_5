@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header style="background-color: currentColor;border-bottom: 3px solid black; ">
+    <div class="container">
+        <div class="row align-items-center justify-content-lg-center ">
+            <div class="col-md-2 ">
+                <img class="rotate w-100" style="border: 2px solid orange" src="img/1.jpg" alt="">
+            </div>
+
+            <div class="col-md-5" style="padding: 0;">
+                <div class="input-group mb-3">
+                    <button id="a1" style="background-color: green; color: white" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Поиск</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Бытовая техника</a></li>
+                        <li><a class="dropdown-item" href="#">Одежда</a></li>
+                        <li><a class="dropdown-item" href="#">Автомобили</a></li>
+                        <li><a class="dropdown-item" href="#">Прочее</a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    <button id="a1" class="btn btn-outline-secondary" style="background-color: green" type="button">
+                        <i class="fa fa-search" style="color: white" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-2  offset-3 d-none d-md-flex" style="display: flex; justify-content: flex-end; ">
+                <div class="input-group mb-3" style="width: auto; flex-wrap: nowrap">
+                    <button id="a1" class="btn btn-outline-secondary" style="background-color: green" >
+                        <i class="fa fa-shopping-cart" style="color: white" aria-hidden="true"></i>
+                    </button>
+                    <button id="a1" style="background-color: green; color: white" class="btn btn-outline-secondary dropdown-toggle" type="button"data-bs-toggle="dropdown"aria-expanded="false">Войти</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                        <li><a class="dropdown-item" href="index2.html">Оформить заказ</a></li>
+                        <li><a class="dropdown-item" href="#">Список желаний</a></li>
+                        <li><a class="dropdown-item" href="#">Совершённые покупки</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="background-color: white;">
+            <div class="col-md-auto">
+                <li style="justify-content: center"><a href="index.html">Главная</a></li>
+            </div>
+            <div class="col-md-auto">
+                <li style="justify-content: center"><a href="">Бытовая техника</a></li>
+            </div>
+            <div class="col-md-auto">
+                <li style="justify-content: center"><a href="">Одежда</a></li>
+            </div>
+            <div class="col-md-auto">
+                <li style="justify-content: center"><a href="">Автомобили</a></li>
+            </div>
+            <div class="col-md-auto">
+                <li style="justify-content: center"><a href="">Прочее</a></li>
+            </div>
+        </div>
+    </div>
+</header>
+
+<content>
+
+    <div id="block" class="container p-0">
+        <div class="row">
+            <div class="col-md">
+                <div class="table-responsive-sm mt-2" style="background-color: white">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Информация о продукте</th>
+                            <th scope="col">Цена</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Всего</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <div class="container-sm">
+                                    <img class="scale img-thumbnail" style="width: 200px; float: left" src="https://images.ua.prom.st/1817010924_w640_h640_muzhskaya-sportivnaya-tolstovka.jpg" alt="">
+                                </div>
+                                <p>Здесь будет информация <br> (но это не точно)</p>
+                            </th>
+                            <td>1000 руб.</td>
+                            <td>
+                                <input type="text" value="1">
+                            </td>
+                            <td>1000 руб.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="container-sm">
+                                    <img style="width: 200px; float: left" class="scale img-thumbnail" src="https://images.ua.prom.st/213637750_w640_h640_dzhinsy-skinni-zhenskie.jpg" alt="">
+                                </div>
+                                <p>Здесь будет информация <br> (но это не точно)</p>
+                            </th>
+                            <td>1000 руб.</td>
+                            <td>
+                                <input type="text" value="1">
+                            </td>
+                            <td>1000 руб.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="container-sm">
+                                    <img style="width: 200px; float: left" class="scale img-thumbnail" src="https://avatars.mds.yandex.net/i?id=f8b6833b6087b2479719c8e928aef609-3919804-images-thumbs&n=13" alt="">
+                                </div>
+                                <p>Здесь будет информация <br> (но это не точно)</p>
+                            </th>
+                            <td>500 руб.</td>
+                            <td>
+                                <input type="text" value="1">
+                            </td>
+                            <td>500 руб.</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div style="justify-content: center; display: flex">
+                        <input id="a1" class="btn btn-primary" type="reset" value="Обновить" style="background-color: green; ; margin: 0; border: 1px solid green">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="block1" class="container p-0 mt-3">
+
+    <div class="col-md-8 products">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-4">
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img class="w-100 odegda" src="https://images.ua.prom.st/1817010924_w640_h640_muzhskaya-sportivnaya-tolstovka.jpg" alt=""></a>
+                    </div>
+                    <p class="product-price">Цена:1000р.</p>
+                    <a class="info" href="#">Больше информации о товаре</a> <br>
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white">Добавить к заказу</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 products">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-4">
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img class="w-100 odegda" src="https://images.ua.prom.st/213637750_w640_h640_dzhinsy-skinni-zhenskie.jpg" alt=""></a>
+                    </div>
+                    <p class="product-price">Цена:1000р.</p>
+                    <a class="info" href="#">Больше информации о товаре</a> <br>
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white">Добавить к заказу</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8 products">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-4">
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img class="w-100 odegda" src="https://avatars.mds.yandex.net/i?id=f8b6833b6087b2479719c8e928aef609-3919804-images-thumbs&n=13" alt=""></a>
+                    </div>
+                    <p class="product-price">Цена:500р.</p>
+                    <a class="info" href="#">Больше информации о товаре</a> <br>
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white">Добавить к заказу</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="container mt-5 p-0">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-8">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltip01" class="form-label" style="color: green">Имя</label>
+                        <input type="text" class="form-control" id="validationTooltip01"  required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltip02" class="form-label" style="color: green">Фамилия</label>
+                        <input type="text" class="form-control" id="validationTooltip02"  required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 position-relative">
+                        <label for="validationTooltipUsername" class="form-label" style="color: green">Имя пользователя</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                            <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 position-relative">
+                        <label for="validationTooltip03" class="form-label" style="color: green">Город</label>
+                        <input type="text" class="form-control" id="validationTooltip03" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip04" class="form-label" style="color: green">Район</label>
+                        <select class="form-select" id="validationTooltip04" required>
+                        </select>
+                        <div class="invalid-tooltip">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3 position-relative">
+                        <label for="validationTooltip05" class="form-label" style="color: green"> Индекс</label>
+                        <input type="text" class="form-control" id="validationTooltip05" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div id="col" class="col-12">
+                        <button id="a1" class="btn btn-primary" type="submit" style="background-color: green; border: 1px solid green">Подтвердить</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 p-3" style="background-color: currentColor ">
+                <div class="input-group mb-3 mt-4">
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white">Сумма заказа</button>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white"><i class="fas fa-ruble-sign"></i></button>
+                </div>
+
+                <div class="input-group mb-3 mt-3">
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white">К оплате</button>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+                    <button id="a1" class="btn btn-outline-secondary" type="button" style="background-color: green; color: white"><i class="fas fa-ruble-sign"></i></button>
+                </div>
+
+                <div style="justify-content: center; display: flex">
+                    <button id="a1" class="btn btn-outline-secondary mt-5" type="button" style="background-color: rgb(139, 14, 14); color: white">Приобрести</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</content>
+
+
+
+<div class="footer" style="border-top: 3px solid black; margin-top: 50px; background-color: currentColor; ">
+    <div class="container mt-3" style="align-items: center">
+        <div class="row" style="align-items: center; margin: 0;"  >
+            <div class="col-md-2">
+                <img class="rotate w-100" style="border: 2px solid orange" src="img/1.jpg">
+            </div>
+            <div class="col-md-2 offset-3"></div>
+            <div class="col-md">
+                <a class="btn btn-primary" style="display: flex; justify-content: center;" href="#" role="button"><i class="fab fa-vk"></i></a>
+            </div>
+            <div class="col-md">
+                <a class="btn btn-primary" style="background-color: orange; border-color: orange;display: flex; justify-content: center;" href="#" role="button"><i class="fab fa-odnoklassniki"></i></a>
+            </div>
+            <div class="col-md">
+                <a class="btn btn-primary" style="background-color: blue; border-color: blue; display: flex; justify-content: center;" href="#" role="button"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="col-md">
+                <a class="btn btn-primary" style="display: flex; justify-content: center;" href="#" role="button"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
